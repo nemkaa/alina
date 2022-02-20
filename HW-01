@@ -13,11 +13,11 @@ int main() {
 }
 
 int main() {
-int val;
-cin>>val;
-if(val == 0)
+int a;
+cin>>a;
+if(a == 0)
     cout<<"Число равно 0\n";
-else if(val < 0)
+else if(a < 0)
     cout<<"Число отрицательное\n";
 else
     cout<<"Число положительное\n";
