@@ -6,7 +6,7 @@ using namespace std;
 int main() {
     double a,b,c,x;
     cin >> a >> b >> c;
-        x=(c-b)/a;
+        x = (c - b) / a;
         cout << x << endl;
 
     return 0;
