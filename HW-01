@@ -9,18 +9,18 @@ int main() {
         x = (c - b) / a;
         cout << x << endl;
 
-    return 0;
+        return 0;
 }
 
 int main() {
-int a;
-cin>>a;
-if(a == 0)
-    cout<<"Число равно 0\n";
-else if(a < 0)
-    cout<<"Число отрицательное\n";
-else
-    cout<<"Число положительное\n";
+    int a;
+        cin>>a;
+    if(a == 0)
+        cout<<"Число равно 0\n";
+    else if(a < 0)
+        cout<<"Число отрицательное\n";
+    else
+        cout<<"Число положительное\n";
  
-    return 0;
+        return 0;
 }
