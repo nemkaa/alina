@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cstring>
+ 
+int main()
+{
+    using namespace std;
+ 
+    cout << "Введите слова: ";
+    string sentence;
+    getline(cin, sentence);
+ 
+    cout << "Введите букву: ";
+    char two_char_subseq[3];
+    cin.get(two_char_subseq[0]);
+    cin.get(two_char_subseq[1]);
+ 
+    cout << "Слова, начинающиеся с А" << two_char_subseq << "\': ";
+    char * word = NULL;
+    bool first = true;
+    while ((word = strtok(first ? (char*)sentence.c_str() : NULL, " ,")) != NULL)
+    {
+        first = false;
+        if (strlen(word) > 1 && word[0] == two_char_subseq[0] && word[1] == two_char_subseq[1])
+        {
+            cout << word << " ";
+        }
+    }
